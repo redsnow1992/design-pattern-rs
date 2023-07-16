@@ -1,4 +1,4 @@
-use super::game::{Room, MazeGame};
+use super::game::{MazeGame, Room};
 
 #[derive(Clone)]
 pub struct MagicRoom {

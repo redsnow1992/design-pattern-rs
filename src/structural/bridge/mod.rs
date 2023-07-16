@@ -4,10 +4,9 @@ pub mod remotes;
 #[cfg(test)]
 mod tests {
     use super::{
-        remotes::{Remote, basic::BasicRemote, advanced::AdvancedRemote, HasMutableDevice},
-        device::{Device, tv::Tv, radio::Radio}
+        device::{radio::Radio, tv::Tv, Device},
+        remotes::{advanced::AdvancedRemote, basic::BasicRemote, HasMutableDevice, Remote},
     };
-
 
     #[test]
     fn test_bridge() {
@@ -20,7 +19,7 @@ mod tests {
         let mut basic_remote = BasicRemote::new(device.clone());
         basic_remote.power();
         basic_remote.device().print_status();
-    
+
         println!("Tests with advanced remote.");
         let mut advanced_remote = AdvancedRemote::new(device);
         advanced_remote.power();

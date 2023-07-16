@@ -8,8 +8,8 @@ fn do_a_call() {
 
 #[cfg(test)]
 mod tests {
-    use super::ARRAY;
     use super::do_a_call;
+    use super::ARRAY;
 
     #[test]
     fn test_singleton() {

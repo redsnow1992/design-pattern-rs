@@ -10,7 +10,9 @@ fn call(target: impl Target) {
 
 #[cfg(test)]
 mod tests {
-    use crate::structural::adapter::{target::OrdinaryTarget, call, adaptee::SpecificTarget, adapter::TargetAdapter};
+    use crate::structural::adapter::{
+        adaptee::SpecificTarget, adapter::TargetAdapter, call, target::OrdinaryTarget,
+    };
 
     #[test]
     fn test_adapter() {

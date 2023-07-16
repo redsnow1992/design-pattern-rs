@@ -1,5 +1,5 @@
-pub mod basic;
 pub mod advanced;
+pub mod basic;
 
 use super::device::Device;
 

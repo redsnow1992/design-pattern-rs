@@ -16,7 +16,7 @@ mod tests {
             y: 15,
             radius: 10,
         };
-    
+
         // Prototype in action.
         let mut circle2 = circle1.clone();
         circle2.radius = 77;

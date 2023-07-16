@@ -13,7 +13,6 @@ use lazy_static::lazy_static;
 //
 // `Mutex` provides safe access to a single object.
 
-
 lazy_static! {
     static ref ARRAY: Mutex<Vec<u8>> = Mutex::new(vec![]);
 }
@@ -24,8 +23,8 @@ fn do_a_call() {
 
 #[cfg(test)]
 mod tests {
-    use super::ARRAY;
     use super::do_a_call;
+    use super::ARRAY;
 
     #[test]
     fn test_singleton() {
